@@ -1,0 +1,13 @@
+.header .cont-header .gnb .menu.dep-1>li>a{
+    &.ic-car {
+        // background: url("http://static.carminute.co.kr/img/icon/menu/menuIcons_car.png");
+        background: url("../img/icon//menu/menuIcons_car.png");
+        background-repeat: no-repeat;
+        background-position: 10px 0;
+    }
+    &.ic-car:hover,
+    &.ic-car.on {
+        background-position: 10px -40px;
+    }
+}
+

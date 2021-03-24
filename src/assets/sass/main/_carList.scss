@@ -1,0 +1,356 @@
+.wrap-main .sect-carlist{
+    
+    padding-top: 100px;
+    padding-bottom: 90px;
+    background-color: #000;
+    
+}
+
+
+.wrap-main .sect-carlist{
+    // padding: 0 4.0rem;
+    padding-top: 8.3rem;
+    padding-bottom: 7.2rem;
+    .carlist-area{
+        margin-top: 80px;
+        .car-brand{
+            text-align: center;
+            img{
+                width: fit-content;
+            }
+        }
+        .car-title-best{
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+            letter-spacing: -3.0px;
+            .span-t01{
+                color: #a17ed7;
+                font-weight: 500;
+            }
+            .span-t02{
+                color: #cc5acc;
+                
+                font-weight: 500;
+            }
+        }
+
+        .carlist-ul{
+            margin-top: 24px;
+            display: grid;
+            // grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));;
+            column-gap: 28px;
+            row-gap: 20px;
+            position: relative;
+            padding: 0 28px;
+            &>li{
+                border-radius: 12px;
+                background-color: #21222c;
+                position: relative;
+                border: 1px solid #6f7290;
+                padding-top: 20px;
+                
+                .car-view{
+                    position: relative;
+                    width: 100%;
+                    height: 100px;
+                    overflow: hidden;
+                    display: flex;
+                    position: relative;
+                    margin-top: 24px;
+                    .img-box{
+                        position: relative;
+                        width: 220px;
+                        margin: 0 auto;
+                    }
+                }
+                .car-name{
+                    text-align: center;
+                    color: #fff;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+                .car-type{
+                    text-align: center;
+                    color: #fff;
+                    font-size: 25px;
+                    font-weight: 600;
+                    margin-top: 30px;
+                }
+                .car-info-box{
+                    background-color: #1c1e26;
+                    padding: 0 15px;
+                    padding-bottom: 28px;
+                    margin-top: 10px;
+                    border-radius: 0 0 12px 12px;
+                }
+                .car-info-ul{   
+                    margin: 0 auto;
+                    padding-top: 18px;
+                    
+                    &>li{ 
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #34363d;
+                        padding-top: 10px;
+                        padding-bottom: 4px;
+                        
+                        &:last-of-type{
+                            border-bottom: none;
+                            padding-bottom: 0;
+                        }
+
+                        p{
+                            color: #fff;
+                            font-weight: 300;
+                            letter-spacing: -0.6px;
+                            line-height: 1.2;
+                        }
+                        .p-name{   
+                            font-size: 16px;
+                        }
+                        .p-cont{
+                            font-size: 16px;
+                        }
+                    }
+                    li.info-grade{
+                        .p-name{
+                            color: #b67bff;
+                            font-weight: 500;
+                        }
+                    }
+                    li.info-fee{
+                        .p-name{
+                            color: #f446ff;
+                            font-weight: 700;
+                        }
+                        .p-cont{
+                            font-size: 23px;
+                            font-weight: 700;
+                            .span-won{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    li.info-payment{
+                        .p-num{
+                            color: #e30000;
+                            font-size: 22px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                .btn-quote{
+                    // font-family: "S-CoreDream", sans-serif;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #743bca;
+                    border-radius: 21px;
+                    width: 98%;
+                    height: 42px;
+                    color: #fff;
+                    font-size: 22px;
+                    font-weight: 500;
+                    letter-spacing: -0.8px;
+                    margin: 0 auto;
+                    margin-top: 18px;
+                    padding-top: 4px;
+                }
+            }
+        }
+        .carlist-best-ul{
+            margin-top: 46px;
+            &>li{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    width: 78px;
+                    height: 116px;
+                    left: -2.2rem;
+                    top: -10px;
+                }
+
+                &:nth-of-type(1):before{
+                    background: url("http://static.carminute.co.kr/img/main/icon_best01.png") no-repeat;
+                }
+                &:nth-of-type(2):before{
+                    background: url("http://static.carminute.co.kr/img/main/icon_best02.png") no-repeat;
+                }
+                &:nth-of-type(3):before{
+                    background: url("http://static.carminute.co.kr/img/main/icon_best03.png") no-repeat;
+                }
+            }
+        }
+    }
+    .carlist-best{
+        margin-top: 52px;
+        padding-bottom: 30px;
+    }
+}
+
+
+
+@media(max-width:900px){
+.wrap-main .sect-carlist{
+    .carlist-area{
+        margin-top: 8.0rem;
+        .car-brand{
+            text-align: center;
+            // width: auto;
+            // height: 4.0rem;
+            height: 5.5rem;
+            img{
+                width: auto;
+                height: 100%;
+            }
+        }
+        .car-title-best{
+            text-align: center;
+            color: #fff;
+            font-size: 5.0rem;
+            letter-spacing: -3.0px;
+            .span-t01{
+                color: #a17ed7;
+                font-weight: 500;
+            }
+            .span-t02{
+                color: #cc5acc;
+                font-weight: 500;
+            }
+        }
+
+        .carlist-ul{
+            margin-top: 2.4rem;
+            display: grid;
+            
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 2.8rem;
+            row-gap: 2.8rem;
+            position: relative;
+            padding: 0 2.8rem;
+            &>li{
+                border-radius: 1.4rem;
+                padding-top: 3.0rem;
+                
+                .car-view{
+                    margin-top: 3.0rem;
+                    height: 13.0rem;
+                    margin-top: 2.4rem;
+                    .img-box{
+                        
+                        width: 26.0rem;
+                        margin: 0 auto;
+                    }
+                }
+                .car-name{
+                    font-size: 4.0rem;
+                    font-weight: 600;
+                }
+                .car-type{
+                    text-align: center;
+                    color: #fff;
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    margin-top: 30px;
+                }
+                .car-info-box{
+                    background-color: #1c1e26;
+                    padding: 0 1.5rem;
+                    padding-bottom: 2.0rem;
+                    margin-top: 1.0rem;
+                }
+                .car-info-ul{   
+                    margin: 0 auto;
+                    padding-top: 2.4rem;
+                    &>li{ 
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 1px solid #34363d;
+                        padding-top: 1.0rem;
+                        padding-bottom: 0.4rem;
+                        
+                        &:last-of-type{
+                            border-bottom: none;
+                            padding-bottom: 0;
+                        }
+
+                        p{
+                            color: #fff;
+                            font-weight: 300;
+                            letter-spacing: -0.6px;
+                        }
+                        .p-name{
+                            font-size: 2.4rem;
+                            font-weight: 300;
+                        }
+                        .p-cont{
+                            font-size: 2.0rem;
+                        }
+                    }
+                    li.info-grade{
+                        .p-name{
+                            
+                        }
+                    }
+                    li.info-fee{
+                        .p-name{
+                            
+                        }
+                        .p-cont{
+                            font-size: 2.8rem;
+                            font-weight: 500;
+                            .span-won{
+                                font-size: 2.2rem;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                }
+                .btn-quote{
+                    
+                    
+                    border-radius: 3.0rem;
+                    height: 6.0rem;
+                    font-size: 2.8rem;
+                    margin: 0 auto;
+                    margin-top: 1.8rem;
+                    padding-top: 0.6rem;
+                }
+            }
+        }
+        .carlist-best-ul{
+            margin-top: 46px;
+            &>li{
+                
+                &::before{
+                    width: 7.8rem;
+                    height: 11.6rem;
+                    left: -2.2rem;
+                    top: -1.0rem;
+                    background-size: 7.8rem 11.6rem !important;
+                }
+
+                &:nth-of-type(1):before{
+                    
+                }
+                &:nth-of-type(2):before{
+                    
+                }
+                &:nth-of-type(3):before{
+                    
+                }
+            }
+        }
+    }
+    .carlist-best{
+        margin-top: 5.2rem;
+        padding-bottom: 3.0rem;
+    }
+}
+    
+}

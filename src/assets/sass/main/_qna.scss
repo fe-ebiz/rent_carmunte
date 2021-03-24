@@ -1,0 +1,82 @@
+.wrap-main .sect-qna{
+    background: url("http://static.carminute.co.kr/img/main/qna_bg.jpg") no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 90px;
+    .qna-area{
+        margin-top: 52px;
+        .qna-ul{
+            padding-left: 20px;
+            width: 100%;
+            &>li{
+                margin-bottom: 66px;
+                p{
+                    color: #fff;
+                    letter-spacing: -1px;
+                    line-height: 1.5;
+                    word-break: keep-all;
+                }
+                .p-q{
+                    display: flex;
+                    font-size: 27px;
+                    font-weight: 500;
+                    &::before{
+                        color: #de79ff;
+                        content: "Q.";
+                        margin-right: 8px;
+                    }
+                }
+                .p-a{
+                    margin-top: 15px;
+                    display: flex;
+                    font-size: 25px;
+                    font-weight: 300;
+                    &::before{
+                        color: #aaacff;
+                        content: "A.";
+                        margin-right: 14px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .wrap-main .sect-qna{
+        padding-top: 9.0rem;
+        padding-bottom: 5.0rem;
+        .qna-area{
+            margin-top: 5.2rem;
+            .qna-ul{
+                padding:0 4.0rem;
+                width: 100%;
+                &>li{
+                    margin-bottom: 4.0rem;
+                    p{
+                        letter-spacing: -1px;
+                        line-height: 1.5;
+                    }
+                    .p-q{
+                        font-size: 3.0rem;
+                        font-weight: 500;
+                        &::before{
+                            margin-right: 0.8rem;
+                        }
+                    }
+                    .p-a{
+                        margin-top: 1.0rem;
+                        font-size: 2.4rem;
+                        font-weight: 300;
+                        &::before{
+                            margin-right: 1.4rem;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}

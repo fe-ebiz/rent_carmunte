@@ -1,0 +1,119 @@
+
+/*인트로*/
+.wrap-main .sect-intro{
+    padding-top: 50px;
+    background: url("http://static.carminute.co.kr/img/main/intro_bg.jpg") no-repeat center;
+    background-size: cover;
+    .sect-container{
+        img{
+            width: fit-content;
+        }
+        text-align: center;
+    }
+    .intro-area{
+        .intro-logo{
+
+        }
+        .intro-subment{
+            // font-family: "NanumBarunGothic", sans-serif;
+            color: #fff;
+            font-size: 32px;
+            font-weight: -0.7px;
+            margin-top: 20px;
+        }
+        .title{
+            margin: 0 auto;
+            margin-top: 30px;
+            max-width: 1010px;
+            img{
+                width: 100%;
+            }
+        }
+        .img-car{
+            margin-top: 26px;
+        }
+    }
+
+    .contents{
+        position: relative;
+    }
+    .intro-over-cont{
+        position: absolute;
+        padding-top: 64px;
+        padding-bottom: 42px;
+        width: 100%;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        .txt-area{
+            text-align: center;
+            .p-txt{
+                color: #fff;
+                font-size: 42px;
+                font-weight: 300;
+                letter-spacing: -0.7px;
+                .mark{
+                    color: #ff79f1;
+                    font-size: 66px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:900px){
+    .wrap-main .sect-intro{
+        padding-top: 9.0rem;
+        background: url("http://static.carminute.co.kr/img/main/intro_bg.jpg") no-repeat center;
+        background-size: cover;
+        .sect-container{
+            img{
+                width: 100%;
+            }
+            text-align: center;
+        }
+        .intro-area{
+            .intro-logo{
+                width: 18.0rem;
+                margin: 0 auto;
+            }
+            .intro-subment{
+                font-size: 2.4rem;
+                margin-top: 3.4rem;
+            }
+            .title{
+                width: 80%;
+                margin: 0 auto;
+                margin-top: 3.6rem;
+            }
+            .img-car{
+                margin: 0 auto;
+                margin-top: 4.6rem;
+                width: 80%;
+            }
+        }
+    
+        .contents{
+            position: relative;
+        }
+        .intro-over-cont{
+            padding-top: 6.4rem;
+            padding-bottom: 4.2rem;
+            
+            .txt-area{
+                text-align: center;
+                .p-txt{
+                    color: #fff;
+                    font-size: 4.2rem;
+                    font-weight: 300;
+                    letter-spacing: -0.7px;
+                    .mark{
+                        color: #ff79f1;
+                        font-size: 6.6rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

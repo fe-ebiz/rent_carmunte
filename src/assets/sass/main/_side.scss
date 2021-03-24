@@ -1,0 +1,29 @@
+.side-sect-right{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    .side-area{
+        left: 610px;
+        top:180px;
+        
+        position: absolute;
+        .side-item{
+            margin-bottom: 18px;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            img{
+                width: fit-content;
+            }
+        }
+    }
+}
+@media(max-width:900px){
+.side-sect-right{
+    display: none;
+}
+}

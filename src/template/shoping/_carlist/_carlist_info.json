@@ -1,0 +1,39 @@
+[
+    {
+        "img": "hyundai/avante.png",
+        "name": "카니발",
+        "grade":"RV",
+        "rent_fee": "204,620"
+    },
+    {
+        "img": "hyundai/g90.png",
+        "name": "카니발2",
+        "grade":"RV",
+        "rent_fee": "204,620"
+    },
+    {
+        "img": "hyundai/gv80.png",
+        "name": "카니발3",
+        "grade":"RV",
+        "rent_fee": "204,620"
+    },
+    {
+        "img": "hyundai/avante.png",
+        "name": "카니발4",
+        "grade":"RV",
+        "rent_fee": "204,620"
+    },
+    {
+        "img": "hyundai/avante.png",
+        "name": "카니발5",
+        "grade":"RV",
+        "rent_fee": "204,620"
+    },
+    {
+        "img": "hyundai/g90.png",
+        "name": "카니발6",
+        "grade":"RV",
+        "rent_fee": "204,620"
+    }
+     
+]

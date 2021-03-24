@@ -1,0 +1,189 @@
+.header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.header .sect-header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 84px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 1px solid #333;
+    .header-area{
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1158px;
+        width: 100%;
+        margin: 0 auto;
+        .top-logo{
+            img{
+                width: fit-content;
+            }
+        }
+        .menu-area{
+            .main-menu-ul{
+                display: flex;
+                &>li{
+                    padding: 0 20px;
+                    text-align: center;
+                    a{
+                        display: block;
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 500;
+                        letter-spacing: -0.7px;
+                        
+                        cursor: pointer;
+                        &:hover{
+                            color: #b67bff;
+                        }
+                    }
+                    .active{
+                        // color: #1a8800;
+                    }
+                }
+            }
+        }
+
+        .top-tel{
+            // position: absolute;
+            // right: 0;
+            // transform: translateX(100%);
+            margin-right: 20px;
+            .icon-tel{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: fit-content;
+                }
+                .img-box{
+                    width: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .tel-txt{
+                    padding-top: 4px;
+                    color: #cc39c4;
+                    font-size: 18px;
+                    font-weight: 500;
+                    letter-spacing: -0.7px;
+                    margin-left: 5px;
+                }
+            }
+            .p-tel-num{
+                color: #ec82f9;
+                font-size: 25px;
+                font-weight: 700;
+                margin-top: 4px;
+                
+            }
+        }
+    }
+}
+
+@media(max-width:1090px){
+    .header .sect-header{
+        .top-tel{
+            display: none !important;
+        }
+    }
+}
+
+
+@media(max-width:900px){
+    .header{
+        position: relative;
+        height: auto;
+    }
+
+    .header .sect-header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        .header-area{
+            z-index: 10;
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            .top-logo-area{
+                display: block;
+                padding-top: 3.4rem;
+                padding-bottom: 3.0rem;
+                background-color: #000;
+                width: 100%;
+            }
+            .top-logo{
+                display: block;
+                margin: 0 auto;
+                width: 32.0rem;
+                .logo-box{
+                    width: 100%;
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            .menu-area{
+                width: 100%;
+                .main-menu-ul{
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    border-top: 2px solid #484848;
+                    &>li{
+                        width: 50%;
+                        padding: 0;
+                        border: 2px solid #484848;
+                        border-left: none;
+                        border-top: none;
+                        a{
+                            
+                            width: 100%;
+                            padding-top: 2.8rem;
+                            padding-bottom: 2.4rem;
+                            background-color: #1a1a1a;
+                            color: #fff;
+                            font-size: 2.8rem;
+                            font-weight: 500;
+                            letter-spacing: -0.7px;
+                            height: 7.5rem;
+                            &:hover{
+                                
+                            }
+                        }
+                        .active{
+                            // color: #1a8800;
+                        }
+                    }
+                }
+            }
+    
+            .top-tel{
+                display: none;
+                .icon-tel{
+                    
+                    img{
+                        
+                    }
+                }
+                .p-tel-num{
+   
+                }
+            }
+        }
+    }
+}

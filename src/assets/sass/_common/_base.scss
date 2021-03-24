@@ -1,0 +1,615 @@
+.overflow-hidden,.overflow-hidden2,.overflow-hidden3{
+    overflow: hidden;
+}
+
+.show-mobile{
+    display: none !important;
+}
+.show-pc{
+    display: block !important;
+}
+
+
+@media(max-width:900px){
+    .show-mobile{
+        display: block !important;
+    }
+
+
+    .hidden-mobile{
+        display: none !important;
+    }
+
+    .show-pc{
+        display: none !important;
+    }
+}
+
+.wrap-container{
+    background-color: #1a1a1a;
+    padding-top: 83px;
+    .sect-container{
+        max-width: 1158px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+@media(max-width:900px){
+.wrap-container{
+    padding-top: 0;
+    .sect-container{
+        width: 100%;
+    }
+}
+}
+
+
+/*모바일용 버튼*/
+.btn-bottom-sect{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    .btn-area{
+        display: flex;
+        width: 100%;
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 12.6rem;
+            .p-txt{
+                font-size: 3.8rem;
+                font-weight: 500;
+                margin-left: 1.4rem;
+            }
+        }
+        .btn-tel{
+            width: 20%;
+            background-color: #000000;
+            .icon{
+                width: 7.8rem;
+            }
+        }
+        .btn-estimate{
+            background-color: #331c74;
+            .icon{
+                width: 3.4rem;
+            }
+            .p-txt{
+                padding-top: 1.0rem;
+                color: #fff;
+            }
+        }
+        .btn-kakao{
+            background-color: #4d256c;
+            .icon{
+                width: 7.6rem;
+            }
+            .p-txt{
+                padding-top: 1.0rem;
+                color: #e3cb21;
+                
+            }
+        }
+    }
+}
+
+
+/*컴플리스 박스*/
+.modal-complete-request{
+    z-index: 35;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    .complete-area{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #fff;
+        overflow-x: hidden;
+        border-radius: 12px;
+        width: 530px;
+        margin: 0 auto;
+        padding-top: 2.0rem;
+        text-align: center;
+        .btn-close-complete{
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        .top-logo{
+            width: 164px;
+            margin: 0 auto;
+        }
+
+        .message-main{
+            margin-top: 44px;
+            p{
+                color: #000;
+                letter-spacing: -1px;
+            }
+            .txt-pc{
+                font-size: 40px;
+            }
+            .txt-mobile{
+                display: none;
+            }
+            
+        }
+
+        .line-bar{
+            width: 306px;
+            height: 2px;
+            background-color: #dadada;
+            margin: 0 auto;
+            margin-top: 22px;
+        }
+        .message-sub{
+            margin-top: 20px;
+            line-height: 1.3;
+            color: #747474;
+            font-size: 22px;
+            font-weight: 400;
+            letter-spacing: -1px;
+            .mark, .name, .phone, .car{
+                color: #621b74;
+                font-weight: 700;
+            }
+        }
+
+        .btn-go-complte{
+            margin-top: 30px;
+            font-family: 'GmarketSans', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #9528b0;
+            width: 100%;
+            color: #fff;
+            font-size: 25px;
+            height: 62px;
+            padding-top: 8px;
+            letter-spacing: -2.4px;
+        }
+    }
+}
+
+
+@media(max-width:900px){
+.modal-complete-request{
+    
+    .complete-area{
+        border-radius: 1.2rem;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 4.0rem;               
+        .btn-close-complete{
+            top: 1.2rem;
+            right: 1.2rem;
+            width: 3.0rem;
+        }
+        .top-logo{
+            width: 23.2rem;
+        }
+
+        .message-main{
+            margin-top: 3.4rem;
+            p{
+
+            }
+            .txt-pc{
+                display: none;
+            }
+            .txt-mobile{
+                font-size: 6.2rem;
+                font-weight: 700;
+                display: block;
+            }
+            
+        }
+        
+        .line-bar{
+            width: 45.2rem;                    
+        }
+        .message-sub{
+            margin-top: 4.0rem;
+            line-height: 1.4;
+            font-size: 2.7rem;
+            font-weight: 700;
+            letter-spacing: -0.05rem;
+            .mark, .name, .phone, .car{
+                color: #621b74;
+                font-weight: 700;
+            }
+        }
+
+        .btn-go-complte{
+            margin-top: 5.5rem;
+            width: 100%;
+            font-size: 25px;
+            height: 8.0rem;
+            padding-top: 8px;
+            letter-spacing: -0.3rem;
+        }
+    }
+}
+}
+    
+
+/*상당신청 팝업*/
+
+.btn-open-consult{
+    cursor: pointer;
+}
+
+.pop-consult-wrap{
+    display: none;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    .pop-consult{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        width: 556px;
+        height: 556px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, #3077f9,#8655ef,#ba41e9);
+        position: relative;
+        *{
+            color: #fff;
+        }
+        .btn-close-pop{
+            z-index: 25;
+            position: absolute;
+            top: 36px;
+            right: 70px;
+            background-color: #8716b8;
+            border-radius: 50%;
+            width: 55px;
+            height: 55px;
+            .img-box{
+                img{
+                    width: fit-content;
+                }
+            }
+        }
+
+
+        .pop-cont{
+            position: absolute;   
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            width: 352px;
+            margin: 0 auto;
+            text-align: center;            
+        }
+
+        .logo-top{
+            img{
+                width: fit-content;
+            }
+        }
+        .pop-title{
+            margin-top: 22px;   
+            font-size: 42px;
+            font-weight: 500;
+            letter-spacing: -0.7px;
+        }
+        .in-box{
+            margin-top: 20px;
+            width: 100%;
+            input{
+                width: 100%;
+                display: block;
+                margin-bottom: 13px;
+                height: 42px;
+                padding: 12px;
+                color: #343434;
+                font-size: 22px;
+                font-weight: 500;
+                // padding-top: 12px;
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .policy-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 22px;
+            .p-txt{
+                font-size: 22px;
+                font-weight: 500;
+            }
+            .btn-policy{
+                background-color: #5e39ad;
+                width: 64px;
+                height: 28px;
+                border-radius: 14px;
+                font-size: 22px;
+                font-weight: 500;
+                margin-left: 10px;
+            }
+        }
+        .btn-consult{
+            margin-top: 12px;
+            background-color: #000;
+            height: 54px;
+            border-radius: 27px;
+            width: 100%;
+            font-size: 3.0rem;
+            font-weight: 500;
+            padding-top: 4px;
+        }
+
+        .p-tel{
+            margin-top: 16px;
+            font-size: 35px;
+            font-weight: 700;
+            letter-spacing: -0.7px;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .pop-consult-wrap{
+        .pop-consult{
+            margin: 0 auto;
+            width: 56.0rem;
+            height: 56.0rem;
+            
+            *{
+                color: #fff;
+            }
+            .btn-close-pop{
+                top: 3.6rem;
+                right: 7.0rem;
+                width: 5.5rem;
+                height: 5.5rem;
+                .img-box{
+                    width: 2.2rem;
+                    margin: 0 auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+    
+    
+            .pop-cont{
+                width: 35.0rem;
+            }
+    
+            .logo-top{
+                margin: 0 auto;
+                width: 18.0rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .pop-title{
+                margin-top: 2.2rem;   
+                font-size: 4.2rem;
+            }
+            .in-box{
+                margin-top: 2.0rem;
+                width: 100%;
+                input{
+                    margin-bottom: 1.3rem;
+                    height: 4.2rem;
+                    padding-left: 1.2rem;
+                    font-size: 2.2rem;
+                    padding-top: 1.7rem;
+                    &:last-of-type{
+                        
+                    }
+                }
+            }
+            .policy-box{
+                margin-top: 2.2rem;
+                .p-txt{
+                    font-size: 2.2rem;
+                }
+                .btn-policy{
+                    background-color: #5e39ad;
+                    width: 6.4rem;
+                    height: 2.8rem;
+                    border-radius: 1.4rem;
+                    font-size: 2.2rem;
+                    margin-left: 1.0rem;
+                }
+            }
+            .btn-consult{
+                margin-top: 12px;
+                background-color: #000;
+                height: 5.2rem;
+                border-radius: 2.6rem;
+                width: 100%;
+                font-size: 2.8rem;
+                font-weight: 500;
+                padding-top: 4px;
+            }
+    
+            .p-tel{
+                margin-top: 1.6rem;
+                font-size: 3.2rem;
+                font-weight: 700;
+                letter-spacing: -0.7px;
+            }
+        }
+    }   
+}
+
+
+/*개인정보보호정책*/
+.pop-policy-wrap{
+    display: none;
+    z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    .pop-policy{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        max-width: 790px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 12px;
+        padding:0 25px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        .policy-textarea{
+            resize: none;
+            height: 370px;
+            width: 100%;
+            overflow-y: auto;
+            color: #747474;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: -1.2px;
+            line-height: 1.2;
+            white-space: pre-wrap;
+            word-break: keep-all;
+            .tit-main{
+                color: #000;
+                font-weight: 700;
+                font-size: 26px;
+            }
+            .tit{
+                color: #000;
+                font-weight: 500;
+            }
+
+        }
+
+        .btn-close-policy{
+            display: block;
+            background-color: #8716b8;
+            margin: 0 auto;
+            margin-top: 20px;
+            width: 427px;
+            height: 68px;
+            color: #fff;
+            font-size: 30px;
+            font-weight: 500;
+            border-radius: 34px;
+            letter-spacing: -0.8px;
+        }
+    }
+    
+}
+
+
+@media(max-width:900px){
+    .pop-policy-wrap{
+        .pop-policy{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 1.2rem;
+            padding:0 2.5rem;
+            padding-top: 5.0rem;
+            padding-bottom: 4.0rem;
+            .policy-textarea{
+                resize: none;
+                height: 32.0rem;
+                font-size: 2.0rem;
+                font-weight: 500;
+                
+                
+                .tit-main{
+                    color: #000;
+                    font-weight: 700;
+                    font-size: 2.6rem;
+                }
+                .tit{
+                    color: #000;
+                    font-weight: 500;
+                }
+    
+            }
+    
+            .btn-close-policy{
+                display: block;
+                background-color: #8716b8;
+                margin: 0 auto;
+                margin-top: 2.0rem;
+                width: 60%;
+                height: 7.6rem;
+                color: #fff;
+                font-size: 3.2rem;
+                font-weight: 500;
+                border-radius: 3.8rem;
+                letter-spacing: -0.8px;
+            }
+        }
+        
+    }
+}
+
+
+/*위로가기 버튼*/
+.fn-up-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    margin: 0 auto;
+    .fn-up-area{
+        position: absolute;
+        left: 636px;
+        bottom: 12px;
+        img{
+            width: fit-content;
+        }
+    }
+}
+
+@media(max-width:900px){
+    .fn-up-wrap{
+        left: auto;
+        right: 0.8rem;
+        // height: 0;
+        top: auto;
+        bottom: 14.0rem;
+        .fn-up-area{
+            transform: translateX(-100%);
+            // position: relative;
+            left: 0;
+            bottom: 0;
+            .btn-fn-up{
+                .img-box{
+                    width: 10.0rem;
+                    min-width: 6.0rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

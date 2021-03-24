@@ -1,0 +1,81 @@
+@media(max-width:900px){
+    html{
+        font-size: calc((10/750)*100vw); 
+    }
+}
+
+
+.wrap-container{
+    .title-area{
+        text-align: center;
+        .title-sub{
+            color: #fff;
+            font-size: 42px;
+            font-weight: 300;
+            word-break: keep-all;
+            letter-spacing: -0.7px;
+        }
+        .title-main{
+            color: #fff;
+            font-size: 75px;
+            font-weight: 500;
+            margin-top: 14px;
+            word-break: keep-all;
+            letter-spacing: -1px;
+        }
+    }
+    .sub-ment{
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 36px;
+        line-height: 1.4;
+        letter-spacing: -1px;
+        word-break: keep-all;
+    }
+}
+
+@media(max-width:900px){
+    .wrap-container{
+        .title-area{
+            
+            .title-sub{
+            
+                font-size: 2.6rem;
+                font-weight: 300;
+                letter-spacing: -0.7px;
+            }
+            .title-main{
+            
+                font-size: 4.6rem;
+                font-weight: 500;
+                margin-top: 1.4rem;
+                letter-spacing: -1px;
+            }
+        }
+        .sub-ment{
+            color: #fff;
+            font-size: 2.4rem;
+            font-weight: 300;
+            margin-top: 3.2rem;
+            line-height: 1.4;
+            letter-spacing: -1px;
+            word-break: keep-all;
+        }
+    }
+}
+
+
+
+
+@import './_cont';
+@import './_shoping';
+@import './_intro';
+@import './_carlist';
+@import './_qna';
+@import './_quote';
+@import './_side';
+
+
+
