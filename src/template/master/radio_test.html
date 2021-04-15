@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang='ko-KR' class='no-js ie8 lt-ie10'><![endif]-->
+<!--[if IE 9]><html lang='ko-KR' class='no-js ie9 lt-ie10'><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="description" content="description">
+    <meta name="keywords" content="Carminute Admin">
+    <meta name="author" content="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="WywEPKOtucXfx634GfkSaopAs5LhmgEFqpIyOqLN">
+    <title>관리자 :: 신차장기렌트카 카민</title>
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Carminute Admin">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Carminute Admin">
+    <meta name="twitter:title" content="Carminute Admin">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:description" content="">
+    <link rel="shortcut icon" href="http://static.carminute.co.kr/img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://master.carminute.co.kr/fonts/nanumgothic/nanumgothic.css">
+    <link rel="stylesheet" href="http://master.carminute.co.kr/fonts/notosanskr/notosanskr.css">
+    <link rel="stylesheet" href="http://master.carminute.co.kr/css/reset.css">
+    <link rel="stylesheet" href="http://master.carminute.co.kr/css/jquery-ui-1.12.1.min.css">
+    <!-- <link rel="stylesheet" href="http://master.carminute.co.kr/css/common.css"> -->
+
+        <!--웹폰트용(2021_0304_테스트용)-->
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        <!--웹폰트용(2021_0304_테스트용)-->
+    
+        <!--CSS추가(2021_0304)-->
+        <link rel="stylesheet" href="../../static/css/master/common3.css">
+        <link rel="stylesheet" href="../static/css/master/common3.css">
+        <!-- <link rel="stylesheet" href="../../static/css/master/customerbox.css"> -->
+        <!--./CSS추가(2021_0304)-->
+
+
+
+    <link rel="stylesheet" href="http://master.carminute.co.kr/css/winpop/winpop.css">
+    <link rel="stylesheet" href="http://master.carminute.co.kr/css/include/pop.css">
+    <link rel="stylesheet" href="http://master.carminute.co.kr/css/front/init.css">
+    <script src="http://master.carminute.co.kr/js/jquery-1.12.4.min.js"></script>
+    <script src="http://master.carminute.co.kr/js/jquery-ui-1.12.1.min.js"></script>
+    <script src="http://master.carminute.co.kr/js/common.js?v=1618366255"></script>
+    <script src="http://master.carminute.co.kr/js/front/init.js?v=1618366255"></script>
+
+    <!--[if lt IE 9]>
+    <script type='text/javascript' src='//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js'></script>
+    <![endif]-->
+</head>
+
+<body class="page-front" cz-shortcut-listen="true">
+    <div class="wrapper">
+        <header class="header">
+            <div class="group cont-header">
+                <h1 class="logo">
+                    <a href="/" class="logo-a">
+                        <img src="http://static.carminute.co.kr/img/carminute.png" alt="master" class="logo-img">
+                    </a>
+                </h1>
+                <nav class="cf gnb" id="gnb">
+                    <div class="btn-box">
+                    </div>
+
+                    <ul class="menu dep-1">
+                        <li>
+                            <a href="/customer" class="ic-reservation">상담관리</a>
+                            <ul class="dep-2">
+                                <li><a href="/customer">고객 목록</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="/carmodel" class="ic-car">챠량 관리</a>
+                            <ul class="dep-2">
+                                <li>
+                                    <a href="#">차량 등록</a>
+                                    <ul class="dep-3">
+                                        <li><a href="/carmodel">모델 목록</a></li>
+                                        <li><a href="/vehicle">차량 목록</a></li>
+                                        <li><a href="/brand">제조사 목록</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/shop">지식쇼핑 상품 목록</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/ad" class="ic-reservation">광고관리</a>
+                            <ul class="dep-2">
+                                <li><a href="/ad">키워드 목록</a></li>
+
+                                <li><a href="/ad/ad-day-stat">일별 광고 통계</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/analysis/dashboard" class="ic-analysis">통계</a>
+                            <ul class="dep-2">
+                                <li>
+                                    <a href="#">차량 등록</a>
+                                    <ul class="dep-3">
+                                        <li><a href="/carmodel">모델 목록</a></li>
+                                        <li><a href="/vehicle">차량 목록</a></li>
+                                        <li><a href="/brand">제조사 목록</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/shop">지식쇼핑 상품 목록</a></li>
+                            </ul>
+
+                            <ul class="dep-2">
+                                <li><a href="/analysis/dashboard">대시보드</a></li>
+                                <li>
+                                    <a href="#">광고 통계</a>
+                                    <ul class="dep-3">
+                                        <li><a href="/analysis/keyword-stat-day">일별 키워드 통계</a></li>
+                                        <li><a href="/analysis/ad-stat-day">매체별 일별 통계</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/account" class="ic-config">관리자</a>
+                            <ul class="dep-2">
+                                <li><a href="/account">제휴사 목록</a></li>
+                                <li><a href="/adm">관리자 목록</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="user-bar">
+                    <span class="user">
+                        이현총 님 (이비즈네트웍스)
+                        <i class="fa fa-user-circle"></i>
+                    </span>
+
+                    <form method="POST" action="http://master.carminute.co.kr/logout">
+                        <input type="hidden" name="_token" value="WywEPKOtucXfx634GfkSaopAs5LhmgEFqpIyOqLN">
+                        <ul class="menu cf">
+                            <li class="item item-1"><a href="/"><i class="icon-menu ic-home"></i> <span
+                                        class="hidden">홈</span></a></li>
+                            <li class="item item-2"><a href="http://master.carminute.co.kr/logout"
+                                    onclick="event.preventDefault(); this.closest('form').submit();"><i
+                                        class="icon-menu ic-out"></i> <span class="hidden">로그아웃</span></a>1</li>
+                            <li class="item item-1"><a onclick="page.layer('uinfo', 'adm', 15)"><i
+                                        class="icon-menu ic-gear"></i> <span class="hidden">정보수정</span></a></li>
+                        </ul>
+                    </form>
+
+                    <div class="site-info">&nbsp;</div>
+                </nav>
+            </div>
+        </header>
+
+        <aside class="sidebar left">
+            <h2 class="hidden">사이드 네비게이션</h2>
+            <div class="lnb" id="favorites">
+                <a class="btna quick-plus" onclick="page.favorites(1, $('h2.skip').text(), '/customer')"><img
+                        src="http://master.carminute.co.kr/img/icon/quick/quickMenuPlus.png" alt="즐겨찾기 메뉴 추가"></a>
+                <a class="btna quick-none"><img src="http://master.carminute.co.kr/img/icon/quick/split.png"
+                        alt="즐겨찾기 메뉴 없음"></a>
+
+                <div class="qm-pop" style="display: none;">
+                    <ul class="qm-list">
+                        <li ref="deleteOne"><img src="http://master.carminute.co.kr/img/icon/doc.png" alt="DOC"> 삭제</li>
+                        <li class="division"></li>
+                        <li ref="deleteAll"><img src="http://master.carminute.co.kr/img/icon/doc.png" alt="DOC"> 전체 삭제
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <div class="cf contents chkIn-contents">
+            <div class="row-top-btn">
+            </div>
+
+            <div class="cf row-h2">
+                <h2 class="skip">고객 리스트</h2>
+                <h2 class="page-title">고객 리스트</h2>
+
+                <button type="button" class="btn-red" onclick="temps.del(1)">선택취소</button>
+                <button type="button" class="btn-green" onclick="page.layer('add', 'customer', '')">문의등록</button>
+            </div>
+
+            <div class="cf cont-container-f">
+                <div class="cont-property">
+                    <div class="grid-wrap">
+                        <div class="grid-contents">
+                            <form id="customer-list">
+                                <table class="grid-tbl property-tbl">
+                                    <colgroup>
+                                        <col style="width:7%">
+                                        <col style="width:10%">
+                                        <col style="width:7%">
+                                        <col style="width:10%">
+                                        <col style="width:7%">
+                                        <col style="width:40%">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">이름
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="cell"><input type="text" class="form-input" name="name"
+                                                        value=""></div>
+                                            </td>
+                                            <th>
+                                                <div class="cell">연락처
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="cell"><input type="text" class="form-input" name="tel"
+                                                        value=""></div>
+                                            </td>
+                                            <th>
+                                                <div class="cell">등록일
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="cell">
+                                                    <span class="cal-box">
+                                                        <input type="text" name="sdate"
+                                                            class="appe-reset inp-cal date-ui cursor" value="">
+                                                        <span class="i-cal cursor"><img
+                                                                src="http://master.carminute.co.kr/img/icon/cal.png"
+                                                                alt="달력"></span>
+                                                    </span>
+                                                    <span class="mg-">~</span>
+                                                    <span class="cal-box">
+                                                        <input type="text" name="edate"
+                                                            class="appe-reset inp-cal date-ui cursor" value="">
+                                                        <span class="i-cal cursor"><img
+                                                                src="http://master.carminute.co.kr/img/icon/cal.png"
+                                                                alt="달력"></span>
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">접수현황
+                                                </div>
+                                            </th>
+                                            <td colspan="5&quot;">
+                                                <div class="cell">
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="0" checked="">전체</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="50">상담요청</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="1">상담완료</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="90">부재중</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="99">부재완료</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="80">통화대기</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="30">단기렌트</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state1"
+                                                                value="40">기타</label></span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <div class="cell">진행도
+                                                </div>
+                                            </th>
+                                            <td colspan="5&quot;">
+                                                <div class="cell">
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="0" checked="">전체</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="50">진행중</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="99">진행보류</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="25">심사요청</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="30">서류준비중</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="20">심사중</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="10">계약대기</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="1">계약완료</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="15">시기조율중</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="40">견적서 전달</label></span>
+                                                    <span class="rdo-box"><label><input type="radio" name="state2"
+                                                                value="90">심사후 진행보류</label></span>
+                                                </div>
+                                            </td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-list mb-30">
+                    <button type="button" class="btn-brown"
+                        onclick="common.search(&quot;customer-list&quot;)">SEARCH</button>
+                    <button type="button" class="btn-brown"
+                        onclick="location.href=&quot;http://master.carminute.co.kr/customer&quot;">CLEAR</button>
+                    <button type="button" class="btn-gray btn-i" onclick="excel.export('customer-list')"><span
+                            class="icon ic-excel"></span>Excel</button>
+                </div>
+
+                <div class="cont-list">
+                    <div class="grid-wrap scr-wrap">
+                        <div class="grid-scrollable-x">
+                            <div class="grid-area grid-head">
+                                <div class="grid-scrollable">
+                                    <table class="grid-tbl">
+                                        <colgroup>
+                                            <col style="width:30px;">
+                                            <col style="width:60px;">
+                                            <col style="width:120px">
+                                            <col style="width:120px">
+                                            <col style="width:280px">
+                                            <col style="width:150px">
+                                            <col style="width:100px">
+                                            <col style="width:70px">
+                                            <col style="width:450px">
+                                            <col style="width:160px">
+                                            <col style="width:100px">
+                                            <col style="width:100px">
+                                            <col>
+                                        </colgroup>
+                                        <thead class="rowgroup">
+                                            <tr>
+                                                <th>
+                                                    <div class="cell"><input type="checkbox" id="customer"
+                                                            onclick="common.all(this.id)"></div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">번호</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell ta-left">이름</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">연락처</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell ta-left">차종</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell ta-left">제휴사</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">담당자</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">구분</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell ta-left">광고 키워드</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">등록일</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">접수현황</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell">진행도</div>
+                                                </th>
+                                                <th>
+                                                    <div class="cell ta-left"></div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="grid-area grid-contents">
+                                <table class="grid-tbl">
+                                    <colgroup>
+                                        <col style="width:30px;">
+                                        <col style="width:60px;">
+                                        <col style="width:120px">
+                                        <col style="width:120px">
+                                        <col style="width:280px">
+                                        <col style="width:150px">
+                                        <col style="width:100px">
+                                        <col style="width:70px">
+                                        <col style="width:450px">
+                                        <col style="width:160px">
+                                        <col style="width:100px">
+                                        <col style="width:100px">
+                                        <col>
+                                    </colgroup>
+                                    <tbody class="rowgroup">
+                                        <tr class="active">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="932">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">662</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 932)">한영택</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-7607-2646</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">K8 LPG</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell"></div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">장기렌트카 (cm_naver_000224)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 11:10:30</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="931">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">661</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 931)">안선미</a> (2)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-9260-5779</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">니로/법인/36개월/경기화성-바로 전화달라</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">정형호</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">고객센터 (inbound)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 10:36:16</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담완료</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="930">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">660</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 930)">박재범</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-7932-4989</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">포터봉고</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">정종목</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">모바일</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">봉고 렌트 개인회생장기렌트카 즉시견적 20년식 봉고 III 1톤 표준캡 장축 4WD
+                                                    GL (cm_shop_n_00526)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 10:06:10</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="929">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">659</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 929)">김용규</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-8549-4673</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">제네시스 GV80</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">길연형</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">현대자동차렌트 (cm_naver_014560)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 09:27:50</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="928">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">658</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 928)">이원철</a> (2)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-8682-8732</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">봉고3,개인사업자</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">길연형</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">고객센터 (inbound)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:45:23</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="927">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">657</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 927)">이상진</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-7400-2361</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">gv80</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">김기웅</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:18:13</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="926">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">656</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 926)">변영훈</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-6272-3686</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">포드레인저와일드트랙</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">김기웅</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:17:54</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="925">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">655</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 925)">김시엽</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-7928-2288</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">기아 니로 하이브리드</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">정형호</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:17:38</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="924">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">654</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 924)">김종길</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-8560-8853</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">카니발 4세대</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">신승엽</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:17:20</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="923">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">653</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 923)">신원진</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-2350-6172</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">펠리세이드</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">이승환</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:17:07</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="922">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">652</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 922)">강용이</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-3810-1544</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">아우디</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">용형권</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:16:29</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="921">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">651</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 921)">신인수</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-9900-3388</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">GV80</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">정형호</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:16:08</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="co-red-child">
+                                            <td>
+                                                <div class="cell">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">650</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 920)">신석배</a> (1)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-5567-3877</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">g80</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">이성운</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:15:53</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">기타</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행보류</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="919">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">649</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 919)">김영식</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-5086-6995</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">카니발</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">용형권</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:15:30</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="918">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">648</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 918)">봉원국</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-7595-0776</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">k5</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">이승환</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:15:11</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="co-red-child">
+                                            <td>
+                                                <div class="cell">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">647</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 917)">김재영</a> (1)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-3537-6803</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">그렌저</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">이성운</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">PC</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">CPA - Car &amp; Rich (carnrich)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 08:14:53</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">기타</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행보류</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="916">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">646</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 916)">백광렬</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-9016-2592</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">제네시스,아우디,포르쉐</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">HS 다이렉트오토</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">김형완</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">모바일</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">리스 (cm_naver_000057)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 02:28:40</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="915">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">645</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 915)">이경연</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-6623-2632</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">베뉴</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">용형권</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">모바일</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">베뉴 장기렌트 법인차량 신차장기렌트 2021 현대 베뉴 가격비교
+                                                    (cm_shop_n_00063)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-14 00:38:07</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="914">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">644</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 914)">조정영</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-3715-2394</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">투싼신형</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">(주)카인</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">정종목</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">모바일</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">투싼장기렌트 (cm_daum_144088)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-13 23:29:36</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                        <tr class="">
+                                            <td>
+                                                <div class="cell">
+                                                    <input type="checkbox" class="customer" value="913">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">643</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left"><a
+                                                        onclick="page.layer('info', 'customer', 913)">이민성</a> </div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">010-2987-1664</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">그랜져</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">HS 다이렉트오토</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">이동교</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">모바일</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">장기렌트카 (cm_goo_1792)</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">2021-04-13 21:55:02</div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell">상담요청</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell">진행중</div>
+                                            </td>
+                                            <td>
+                                                <div class="cell ta-left">
+
+                                                </div>
+                                            </td>
+
+                                            <td>
+                                                <div class="cell ta-left"></div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <form id="del" method="post">
+                                    <input type="hidden" name="_token" value="WywEPKOtucXfx634GfkSaopAs5LhmgEFqpIyOqLN">
+                                    <input type="hidden" name="_method" value="delete">
+                                    <input type="hidden" name="did">
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="cf grid-bottom"><a href="javascript:alert('첫 페이지입니다.')" class="prev">&lt;</a>
+
+
+                        <span class="num on">1</span>
+                        <a href="http://master.carminute.co.kr/customer?page=2" class="num">2</a>
+                        <a href="http://master.carminute.co.kr/customer?page=3" class="num">3</a>
+                        <a href="http://master.carminute.co.kr/customer?page=4" class="num">4</a>
+                        <a href="http://master.carminute.co.kr/customer?page=5" class="num">5</a>
+                        <a href="http://master.carminute.co.kr/customer?page=6" class="num">6</a>
+                        <a href="http://master.carminute.co.kr/customer?page=7" class="num">7</a>
+                        <a href="http://master.carminute.co.kr/customer?page=8" class="num">8</a>
+                        <a href="http://master.carminute.co.kr/customer?page=9" class="num">9</a>
+                        <a href="http://master.carminute.co.kr/customer?page=10" class="num">10</a>
+                        <span class="num">...</span>
+
+
+                        <a href="http://master.carminute.co.kr/customer?page=33" class="num">33</a>
+                        <a href="http://master.carminute.co.kr/customer?page=34" class="num">34</a>
+
+                        <a href="http://master.carminute.co.kr/customer?page=2" class="next">&gt;</a>
+
+                        <span class="count">1 - 20 of 662 items</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="layer">
+            <div class="pop-container msg-container">
+                <div class="bg-back"></div>
+
+                <div class="pop-wrapper">
+                    <div class="pop-header">
+                        <h2>고객정보</h2>
+                        <span class="a-i-x i-x fn-cls" onclick="page.close()"></span>
+                    </div>
+
+                    <div class="cf pop-contents">
+                        <form id="info" method="post" enctype="multipart/form-data">
+                            <input type="hidden" name="_token" value="WywEPKOtucXfx634GfkSaopAs5LhmgEFqpIyOqLN"> <input
+                                type="hidden" name="id" value="932">
+                            <div class="customer-contents">
+                                <div class="customer-area area-top">
+                                    <div class="area-cont cont-left">
+                                        <section class="sect sect-manager">
+                                            <h4>담당자 진행 정보</h4>
+                                            <ul class="cont cont-ul">
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">담당자</p>
+                                                        <p class="p-txt">미지정</p>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">접수현황</p>
+                                                        <select name="state1">
+                                                            <option value="50" selected="">상담요청</option>
+                                                            <option value="1">상담완료</option>
+                                                            <option value="90">부재중</option>
+                                                            <option value="99">부재완료</option>
+                                                            <option value="80">통화대기</option>
+                                                            <option value="30">단기렌트</option>
+                                                            <option value="40">기타</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">진행도</p>
+                                                        <select name="state2">
+                                                            <option value="50" selected="">진행중</option>
+                                                            <option value="99">진행보류</option>
+                                                            <option value="25">심사요청</option>
+                                                            <option value="30">서류준비중</option>
+                                                            <option value="20">심사중</option>
+                                                            <option value="10">계약대기</option>
+                                                            <option value="1">계약완료</option>
+                                                            <option value="15">시기조율중</option>
+                                                            <option value="40">견적서 전달</option>
+                                                            <option value="90">심사후 진행보류</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section class="sect sect-customer">
+                                            <h4>고객 정보</h4>
+                                            <ul class="cont cont-ul">
+                                                <!--추가부분(2021_0414)-->
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">사이트</p>
+                                                        <label><input type="radio" name="site" value="meloncar" /> 멜론카</label>
+                                                        <label><input type="radio" name="site" value="carminute" checked/> 카민</label>
+                                                    </div>
+                                                </li>
+                                                <!--.//추가부분(2021_0414)-->
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">유입처</p>
+                                                        <p class="p-txt">카민</p>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">고객구분</p>
+                                                        <select name="mtype">
+                                                            <option value="미정">미정</option>
+                                                            <option value="개인">개인</option>
+                                                            <option value="개인사업자">개인사업자</option>
+                                                            <option value="법인사업자">법인사업자</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">구입방법</p>
+                                                        <select name="rent">
+                                                            <option value="미정">미정</option>
+                                                            <option value="장기렌트">장기렌트</option>
+                                                            <option value="리스">리스</option>
+                                                            <option value="할부">할부</option>
+                                                            <option value="일시불">일시불</option>
+                                                            <option value="할부형 렌트">할부형 렌트</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">고객명</p>
+                                                        <input type="text" name="name" value="한영택">
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">고객연락처</p>
+                                                        <input type="text" name="tel" class="phone"
+                                                            value="010-7607-2646">
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">예비연락처</p>
+                                                        <input type="text" name="tel2" class="phone" value="">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">사업자명</p>
+                                                        <input type="text" name="company" value="">
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">담당자명</p>
+                                                        <input type="text" name="cname" value="">
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">담당연락처</p>
+                                                        <input type="text" name="ctel" value="" class="phone">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">이메일</p>
+                                                        <input type="text" name="email" value="">
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title2">Fax</p>
+                                                        <input type="text" name="fax" value="" class="phone">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">고객문의</p>
+                                                        <textarea class="textarea" readonly="">K8 LPG</textarea>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">한줄메모</p>
+                                                        <input type="text" name="memo" value="">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title">영업자료</p>
+                                                        <input type="file" name="cfile">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="t-col">
+                                                        <p class="p-title"></p>
+                                                        <a href="http://file.carminute.co.kr/estimate/"
+                                                            target="_blank"></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+
+                                    <div class="area-cont cont-right">
+                                        <section class="sect sect-consult">
+                                            <h4>상담내역</h4>
+                                            <div class="cont">
+                                                <div class="register-area">
+                                                    <input type="hidden" name="bid" class="in-register" value="932">
+                                                    <input type="hidden" name="brd" class="in-register"
+                                                        value="customer">
+                                                    <input type="text" name="cmt" class="in-register">
+                                                    <button type="button" class="btn-register"
+                                                        onclick="common.cmt2()">등록</button>
+                                                </div>
+                                                <div class="consult-area">
+                                                    <ul class="consult-list-ul">
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <div class="customer-area area-bottom">
+                                    <div class="cont area-cont">
+                                        <section class="sect sect-carinfo">
+                                            <h4>관심차량 정보</h4>
+                                            <ul class="cont-ul">
+                                                <li>
+                                                    <div class="t-col col-first">
+                                                        <p class="p-title2">구분</p>
+                                                        <select name="b_type" class="form-select"
+                                                            onchange="brand.brand(this.value, '')">
+                                                            <option value="">분류</option>
+                                                            <option value="1">국산차</option>
+                                                            <option value="2">수입차</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title2">제조사</p>
+                                                        <select name="brand_id" class="form-select"
+                                                            onchange="vehicle.vehicle(this.value, '')">
+                                                            <option value="">제조사를 선택해주세요</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title2">모델명</p>
+                                                        <select name="vehicle_id" class="form-select"
+                                                            onchange="models.models(this.value, '')">
+                                                            <option value="">모델을 선택해주세요</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title2">세부모델</p>
+                                                        <select name="carmodel_id" class="form-select">
+                                                            <option value="">모델을 선택해주세요</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title2">연료</p>
+                                                        <select name="fuel">
+                                                            <option value="미정">미정</option>
+                                                            <option value="가솔린">가솔린</option>
+                                                            <option value="디젤">디젤</option>
+                                                            <option value="하이브리드">하이브리드</option>
+                                                            <option value="전기">전기</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="t-col col-first">
+                                                        <p class="p-title">보조금<br>/선수금</p>
+                                                        <select name="deposit">
+                                                            <option value="미정">미정</option>
+                                                            <option value="보증금">보증금</option>
+                                                            <option value="선수금">선수금</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col item-pecent">
+                                                        <p class="p-title2">비율</p>
+                                                        <input type="number" name="per" value="">
+                                                        <p p="" class="p-unit">%</p>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title">보증금기간</p>
+                                                        <select name="d_day">
+                                                            <option value="미정">미정</option>
+                                                            <option value="60개월">60개월</option>
+                                                            <option value="48개월">48개월</option>
+                                                            <option value="36개월">36개월</option>
+                                                            <option value="24개월">24개월</option>
+                                                            <option value="12개월">12개월</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col">
+                                                        <p class="p-title2">보험나이</p>
+                                                        <select name="age">
+                                                            <option value="미정">미정</option>
+                                                            <option value="만26세 이상">만 26세 이상</option>
+                                                            <option value="만21세 이상">만 21세 이상</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="t-col item-km">
+                                                        <p class="p-title">연 주행거리</p>
+                                                        <input type="number" name="metor" value="">
+                                                        <p p="" class="p-unit">Km</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="pop-footer">
+                        <div class="row-btn">
+                            <button type="button" class="btn-brown fn-cls" onclick="info.save()">SAVE</button>
+                            <button type="button" class="btn-gray fn-cls" onclick="page.close()">CLOSE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="/js/basic/init.js"></script>
+            <script>models.select('', '', '', '');</script>
+        </div>
+        <div class="cf"></div>
+        <iframe id="excel_download" src="" style="display:none; visibility:hidden;"></iframe>
+
+        <div class="lds-mask" style="display: none">
+            <div class="lds-wrapper">
+                <div class="lds-container">
+                    <div class="lds-facebook">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="lds-text">
+                        Loading...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $('input:text[numberonly]').on('focus', function () {
+                var x = $(this).val();
+                x = removeCommas(x);
+                $(this).val(x);
+            }).on('focusout', function () {
+                if ($(this).hasClass('none') == false) {
+                    var x = $(this).val();
+                    if (x && x.length > 0) {
+                        if (!$.isNumeric(x)) {
+                            x = x.replace(/[^0-9]/g, '');
+                        }
+                        x = addCommas(x);
+                        $(this).val(x);
+                    }
+                }
+            }).on('keyup', function () {
+                $(this).val($(this).val().replace(/[^0-9]/g, ''));
+
+                var i = $(this).attr('name');
+
+                if (i == 'rate' || i == 'rate2') {
+                    var obj = (i == 'rate') ? 'convert' : 'convert2';
+                    pay.installment();
+                    rsv.convert($(this).val(), obj);
+                } else if (i == 'nights') {
+                    rsv.night($(this).val());
+                }
+            });
+
+            $('input:text[telephone]').on('focusout', function () {
+                var num = $(this).val();
+                var phone = num.replace(/(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/, "$1-$2-$3");
+                $(this).val(phone);
+            });
+
+            $(document).on("keyup", ".phone", function () {
+                prev = $(this).val();
+                str = prev.replace(/[^0-9]/g, "").replace(/(^02|^0505|^01.{1}|^0[0-9]{2})([0-9]+)?([0-9]{4})/, "$1-$2-$3").replace("--", "-");
+                $(this).val(str);
+            });
+
+            $('input:text[credit]').on('focusout', function () {
+                var num = $(this).val();
+                var phone = num.replace(/([0-9]{4})([0-9]{4})([0-9]{4})([0-9]{4})/, '$1-$2-$3-$4');
+                $(this).val(phone);
+            });
+        </script>
+    </div>
+    <script>
+        $(document).on("keyup", ".phone", function () {
+            prev = $(this).val();
+            str = prev.replace(/[^0-9]/g, "").replace(/(^02|^0505|^01.{1}|^0[0-9]{2})([0-9]+)?([0-9]{4})/, "$1-$2-$3").replace("--", "-");
+            $(this).val(str);
+        });
+    </script>
+
+
+    <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe>
+    <div id="GOOGLE_INPUT_CHEXT_FLAG" input=""
+        input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"
+        style="display: none;"></div>
+</body>
+
+</html>

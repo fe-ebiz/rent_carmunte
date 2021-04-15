@@ -1,0 +1,49 @@
+
+<!--테슬라 완료 박스-->
+<div class="modal-complete-request modal-complete-request-tsla">
+    <div class="complete-area">
+        <button type="button" class="btn-close-complete btn-close-pop">
+            <img class="show-pc" src="http://static.carminute.co.kr/img/common/btn_close_modal.png" alt="닫기">
+            <img class="show-mobile" src="http://static.carminute.co.kr/img/common/btn_close_modal02.png" alt="닫기">
+        </button>
+        <div class="top-logo">
+            <img src="http://static.carminute.co.kr/img/common/complete_top_logo.png" alt="로고">
+        </div>
+        <div class="message-main">
+            <p class="txt-pc">
+                <span>테슬라</span>
+                <span>상담신청이 완료되었습니다.</span>
+
+            </p>
+            <p class="txt-mobile">상담신청이 완료되었습니다</p>
+        </div>
+        
+        <div class="line-bar"></div>
+        <p class="message-sub">
+            <span class="name">이비즈</span>님 전문상담원이<br>
+            <span class="car">테슬라 롱레인지3</span>차종<br>
+            <span class="phone">010-1234-5678</span>으로<br>
+            <span class="mark">빠르게 연락</span>드리겠습니다.
+        </p>
+        <button type="button" class="btn-go-complte btn-close-pop">확 인</button>
+    </div>
+</div>
+<!--./테슬라 완료 박스-->
+
+<script>
+    //==테슬라 완료박스==
+$(".btn-complete-tsla").on("click",function(){
+    $("body").addClass("overflow-hidden");
+    $(".modal-complete-request-tsla").show(); 
+});
+
+$(".modal-complete-request-tsla .btn-close-pop").on("click",function(){
+    $("body").removeClass("overflow-hidden");
+    $(".modal-complete-request-tsla").hide(); 
+    //테슬라 단독판매도 켜져 있으면 같이 꺼짐.
+    if($(".pop-consult-wrap-tsla").css("display") == "block"){
+        $(".pop-consult-wrap-tsla").hide();
+    }
+});
+        //.//==테슬라완료박스==
+</script>

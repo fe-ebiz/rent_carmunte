@@ -171,6 +171,18 @@
         width: 100%;
     }
 
+
+    input[type="radio"]{
+        width: auto;
+    }
+
+    label{
+        color: #666;
+        font-size: 14px;
+        letter-spacing: -1px;
+        margin-right: 8px;
+    }
+
     .p-unit{
         margin-left: 4px;
     }

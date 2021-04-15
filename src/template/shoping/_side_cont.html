@@ -25,6 +25,9 @@
 </div>
 <!--.//모바일 바텀버튼-->
 
+
+
+
 <!--빠른상담신청-->
 <div class="pop-consult-wrap">
     <div class="pop-consult">
@@ -53,6 +56,8 @@
     </div>
 </div>
 <!--./빠른상담신청-->
+
+
 
 <!--완료 박스-->
 <div class="modal-complete-request">
@@ -97,8 +102,73 @@
 @@include('./_policy.html')
 <!--./정책박스-->
 
+<!-- 테슬라 단독판매(2021_0402) -->
+<div class="pop-consult-wrap-tsla" >
+    <div class="pop-consult">
+        <button type="button" class="btn-close-pop">
+            <div class="img-box"><img src="http://static.carminute.co.kr/img/common/icon_close_x.png" alt="닫기버튼"></div>
+        </button>
+        <div class="pop-area">
+            <div class="pop-cont">
+                <div class="logo-top">
+                    <img src="http://static.carminute.co.kr/img/popup/tesla/pop_text00.png " alt="카민단독">
+                    <img src="http://static.carminute.co.kr/img/popup/tesla/pop_text01.png " alt="테슬라 단독판매">
+                    <img src="http://static.carminute.co.kr/img/popup/tesla/pop_text02.png " alt="날짜">
+                    <img src="http://static.carminute.co.kr/img/popup/tesla/pop_img00.png " alt="테슬라차">
+                </div>
+                <ul class="pop-list">
+                    <li>
+                        <p class="title ">모델</p>
+                        <p class="cont">테슬라모델3 롱레인지</p>
+                    </li>
+                    
+                    <li>
+                        <p class="title">사양</p>
+                        <p class="cont">
+                            <span>외장 : PEARL WHITE MULTI-COAT</span>
+                            <span>내장 : ALL BLACK</span>
+                            <span>휠 : 18인치 에어로휠</span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="title">가격</p>
+                        <p class="cont"><span>5,990만원</span> → <em>4,772</em><b>만원</b></p>
+                    </li>
+                </ul>
+                <div class="in-box">
+                    <div>
+                        <input type="text" autocomplete="off" placeholder="이름">
+                        <input type="text" autocomplete="off" placeholder="차종" value="테슬라롱레인지3">
+                    </div>
+                    <input type="text" autocomplete="off" placeholder="연락처">
+                </div>
+                <button type="button" class="btn-consult btn-tsla btn-complete-tsla">신/청/문/의</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--.//테슬라 단독판매(2021_0402) -->
+
+
 <script>
     $(document).ready(function(){
+
+        //==테슬라박스(2021_0402)==
+        //오픈
+        $(".btn-complete-tsla").on("click",function(){
+            $("body").addClass("overflow-hidden");
+            $(".modal-complete-request").show(); 
+        });
+        
+        //닫기
+        $(".pop-consult-wrap-tsla .btn-close-pop").on("click",function(){
+            
+            $("body").removeClass("overflow-hidden");
+            $(".pop-consult-wrap-tsla").hide();
+        });
+        //.//==테슬라박스(2021_0402)==
+
+
         //==정책박스==
         $(".btn-open-policy").on("click",function(){
             $("body").addClass("overflow-hidden2");

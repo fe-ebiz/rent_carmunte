@@ -5,6 +5,7 @@
 ## 카민 테스트
 ## http://design.ebiznetworks.co.kr/lhc/carminute/main/index.html
 ## http://design.ebiznetworks.co.kr/lhc/carminute/shoping/index.html
+## http://design.ebiznetworks.co.kr/lhc/carminute/landing/tsla/index_land_tsla.html
 
 ## 카민 관리자 테스트
 ## http://design.ebiznetworks.co.kr/lhc/carminute/master/master_test.html

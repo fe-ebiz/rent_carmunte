@@ -59,7 +59,7 @@ function bSyncMaster() {
     browserSync.init({
         // watch: true,
         port: 3050,
-        startPath: './views/master/red_test.html',
+        startPath: './views/master/radio_test.html',
         server: {
             baseDir: './dist'
         }

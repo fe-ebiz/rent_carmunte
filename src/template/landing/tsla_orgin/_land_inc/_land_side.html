@@ -1,0 +1,78 @@
+ <!--사이드-->
+<aside class="side-sect-right">
+    <div class="side-area-consult">
+        <div class="top-title-box">
+            <div class="icon-tel">
+                <img src="http://static.carminute.co.kr/img/landing/car_minute/icon_tel.png" alt="아이콘">
+            </div>
+            <p class="title">빠른상담신청</p>
+        </div>
+        <form action="">
+            <div class="in-consult-box">
+                <input type="text" placeholder="이름">
+                <input type="text" placeholder="연락처">
+                <input type="text" placeholder="차종">
+            </div>
+        </form>
+        <div class="policy-box">
+            <p class="policy-txt">
+                <span>개인정보 수집 동의</span>
+                <span class="btn-show-policy btn-open-policy">[보기]</span>
+            </p>
+        </div>
+        <a href="#none" class="btn-request-consult">상담신청하기</a>
+        <p class="p-tel">02-6255-3133</p>
+    </div>
+</aside>
+
+
+@@include('./_land_policy.html')
+@@include('./_land_modal_complete.html')
+
+<script>
+//사이드바 버튼/입력페이지 확인 버튼 관련
+$(document).ready(function(){
+    //사이드바 정책보기 버튼 관련
+    $(".side-area-consult .btn-show-policy").on("click",function(){
+        $("body").addClass("overflow-hidden");
+        $(".modal-privacy-policy").show(); 
+    });
+    
+    $(".modal-privacy-policy .btn-close-policy").on("click",function(){        
+        $("body").removeClass("overflow-hidden");
+        $(".modal-privacy-policy").hide(); 
+    });
+
+    //==정책박스==
+    $(".btn-open-policy").on("click",function(){
+        $("body").addClass("overflow-hidden2");
+        $(".pop-policy-wrap").show();
+    });
+    $(".pop-policy-wrap .btn-close-policy").on("click",function(){
+        $("body").removeClass("overflow-hidden2");
+        $(".pop-policy-wrap").hide();
+    }); 
+    //.//==정책박스==
+    
+    
+    //입력페이지 확인버튼 및 사이드바 신청하기 버튼 관련
+    $(".land-info-input .btn-complete").on("click",function(){
+        console.log("작동");
+        $("body").addClass("overflow-hidden");
+        $(".modal-complete-request").show(); 
+    });
+
+    $(".side-area-consult .btn-request-consult").on("click",function(){
+        console.log("작동");
+        $("body").addClass("overflow-hidden");
+        $(".modal-complete-request").show(); 
+    });
+    
+    $(".modal-complete-request .btn-close-complete").on("click",function(){
+        $("body").removeClass("overflow-hidden");
+        $(".modal-complete-request").hide();
+    });
+    
+
+});
+</script>
